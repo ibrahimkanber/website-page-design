@@ -1,0 +1,134 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color:#a9508b;
+    --secondary-color:#35424a;
+    --padding:0 50px;
+}
+
+body{
+    display:grid;
+    grid-template-areas:"nav"
+                        "section1"
+                        "section2"
+                        "section3"
+                        "footer";
+    grid-template-rows: 10% 40% 10% auto 20%;
+    height: 100vh;
+  
+    
+} 
+
+
+nav{
+    grid-area:nav;
+    background-color: var(--secondary-color);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    color:white;
+}
+
+nav,section{
+    padding-left:6rem;
+    padding-right: 6rem;
+}
+
+
+
+span{
+    color:var(--primary-color);
+}
+
+ul{
+    display: flex;
+    justify-content: space-between;
+    border:2px solid green;
+}
+
+ul li{
+    list-style-type: none;
+    display: block;
+    margin-right: 2.5rem;
+}
+
+ul li:last-child{
+    margin-right: 0;
+}
+
+ul li:first-child a{
+    color:var(--primary-color);
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+
+
+.section1{
+    grid-area: section1;
+    background-color: yellow;
+    background-image: url("./img/showcase.jpg");
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.section2{
+    grid-area: section2;
+    background-color: var(--secondary-color);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+.section3{
+    grid-area: section3;
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.section3  div img{
+    height:5rem;
+    width:5rem;
+    display: block;  
+    margin:0 auto;
+
+}
+
+.section3 div{
+    border: 1px solid #000;
+    border-bottom: none;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width:32% ;
+   
+ 
+   
+
+}
+
+
+
+footer{
+    border-top:  3px solid var(--primary-color);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+}
