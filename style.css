@@ -16,9 +16,12 @@ body{
                         "section2"
                         "section3"
                         "footer";
-    grid-template-rows: 10% 40% 8%  auto 15%;
+    grid-template-rows: 10% 40% 8%  auto 6rem;
     font: 15px/1.5 Arial, Helvetica, sans-serif; 
-    height: 80vh;
+    height:99vh;
+    /* padding-top: 10px; */
+    margin:0;
+
   
 } 
 
@@ -205,17 +208,30 @@ footer{
     grid-area: footer;
     display: flex;
     justify-content: center;
+    background-color: rgba(0,0,0,0.7);
+    color: white;
+    /* overflow: hidden; */
+   
  
+}
+
+footer img{
+    height:2.2rem;
+    position: relative;
+    bottom:0.5rem;
+    left: 1.5rem;
+   
 }
 
 
 
 
-@media(max-width:790px){
+@media(max-width:820px){
     body{
-        grid-template-rows: auto 22rem auto  auto 22rem;
+        grid-template-rows: auto 23rem auto  auto auto;
         grid-template-columns: 100%;
         overflow: visible; 
+        max-height: fit-content;
     }
     
     nav{
@@ -253,13 +269,13 @@ footer{
 
     .section1 .down{
         position: relative;
-        top:30%;
+        top:25%;
         margin-block-end: 0;
     }
 
     .section1 .up{
         position: relative;
-        top:30%;
+        top:25%;
     }
 
     .section1 .up {
@@ -324,11 +340,18 @@ footer{
     footer{
         font-size:1rem;
         font-weight: 600;
-        
+        background-color: rgba(0,0,0,0.7);
+        display:flex;
+        align-items: flex-start;
+        justify-content: center;
     }
 
     footer p{
-        color: rgba(0,0,0,0.6)
+        color:white
+    }
+
+    footer img{
+        left:2.5rem;
     }
   
   
