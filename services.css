@@ -58,19 +58,6 @@ nav .left p{
     
 }
 
-span.Clarusway{
-    color:var(--primary-color);
-}
-
-
-
-span.readMore{
-    color:var(--primary-color);
-    display:none;
-
-}
-
-
 ul{
     display: flex;
     justify-content: space-between;
@@ -92,7 +79,7 @@ ul li:last-child{
     margin-right: 0;
 }
 
-ul li:nth-child(2) a{
+ul li:nth-child(3) a{
     color:var(--primary-color);
 }
 
@@ -148,31 +135,28 @@ a{
 .section2{
     grid-area: section2;
     display: flex;
+  
     
+  
+}
+
+.section2 .left{
+    flex:3;
   
 }
 
 
 
-.section2 .left{
-    flex:3;
-    /* border:2px solid green; */
-    height: fit-content;
-}
-
-
-
-.section2 .left p{
+.section2 .left div{
     width:95%;
+    margin-bottom: 0.4rem;
+    background-color: #e6e6e6;
+    border:2px solid #e6e6e6;
+    padding:0.8rem;
    
 }
 
-.section2 .second-dark{
-    background-color:var(--secondary-color);
-    color:white;
-    padding: 0.8rem;
-    
-}
+
 
 .section2 .right{
     flex:1;
@@ -182,8 +166,40 @@ a{
     padding:1rem;
     margin-top:1rem;
     display:flex;
-    flex-direction: column;
-    
+    flex-direction: column;   
+}
+
+.section2 input,.section2 textarea{
+    margin:0.3rem 0;
+    padding:3px 10px;
+}
+
+.section2 input:not(.submit)::placeholder,.section2 textarea{
+    color:var(--primary-color);
+    font-size:0.8rem ;
+    font-family: 'Lobster', cursive;
+}
+
+.section2 textarea::placeholder{
+    color:var(--primary-color);
+}
+
+
+
+
+
+.section2 .right input[type="submit"]{
+    width: 5rem;
+    background-color: var(--primary-color);
+    /* margin-top:1rem; */
+    border:none;
+    padding:0.7rem;
+    color:white;
+    font-size: 1rem;
+    border-radius: 5px;
+    align-self: center;
+
+
 }
 
 
@@ -312,7 +328,7 @@ footer img{
     .section2 .right{
         width: 95%;
         margin-bottom: 1rem;
-        order:-1;
+       
     }
 
     footer{
