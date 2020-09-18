@@ -31,6 +31,10 @@ nav,section{
     padding-right: 6rem;
 }
 
+span.Clarusway{
+    color: var(--primary-color);
+}
+
 
 nav{
     grid-area:nav;
