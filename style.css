@@ -151,6 +151,7 @@ a{
     color:var(--primary-color);
     font-size:0.8rem ;
     font-family: 'Lobster', cursive;
+    opacity:0.8;
 }
 
 .section2 button{
